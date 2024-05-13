@@ -7,8 +7,6 @@ from data import UserMainOrderButton, UserHeaderButton
 import allure
 
 
-
-
 class TestOrderPage:
     @allure.title('Проверка оформления заказа через кнопку "Заказать" в хедере')
     def test_create_order_header_button(self, driver):
@@ -28,6 +26,7 @@ class TestOrderPage:
                                 UserHeaderButton.comment)
         assert 'Заказ оформлен' in order_page.check_success_order()
 
+
     @allure.title('Проверка оформления заказа через кнопку "Заказать" на странице')
     def test_create_order_page_button(self, driver):
         home_page = HomePage(driver)
@@ -45,3 +44,4 @@ class TestOrderPage:
                                 OrderPageLocators.COLOR_GREY,
                                 UserMainOrderButton.comment)
         assert 'Заказ оформлен' in order_page.check_success_order()
+

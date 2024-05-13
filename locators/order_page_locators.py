@@ -24,3 +24,4 @@ class OrderPageLocators:
     MODAL_SCREEN_SUCCESS = [By.XPATH, './/div[@class = "Order_Modal__YZ-d3"]'] #всплывающее окно Заказ оформлен
     LOGO_SCOOTER = [By.XPATH, './/a[@href = "/"]'] #лого Самокат
     LOGO_YANDEX = [By.XPATH, './/a[@href = "//yandex.ru"]'] #лого Яндекс
+

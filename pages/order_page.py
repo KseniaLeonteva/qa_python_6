@@ -1,9 +1,6 @@
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 from locators.order_page_locators import OrderPageLocators
 from locators.home_page_locators import HomePageLocators
 from pages.home_page import HomePage
-
 
 
 class OrderPage(HomePage):
@@ -13,6 +10,7 @@ class OrderPage(HomePage):
 
     def click_page_button(self):
         self.click_on_element(HomePageLocators.PAGE_ORDER_BUTTON)
+
 
     def set_name(self, name):
         self.send_keys(OrderPageLocators.NAME_FIELD, name)
@@ -82,3 +80,4 @@ class OrderPage(HomePage):
         self.set_comment(comment)
         self.click_order_button()
         self.click_yes_button()
+

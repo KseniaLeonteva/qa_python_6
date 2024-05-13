@@ -16,3 +16,4 @@ class TestFAQ:
         home_page.find_element(HomePageLocators.LAST_QUESTION)
         home_page.click_question(number)
         assert home_page.get_answer(number) == answer
+

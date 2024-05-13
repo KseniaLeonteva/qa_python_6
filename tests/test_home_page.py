@@ -1,6 +1,5 @@
 from conftest import driver
 from pages.home_page import HomePage
-from pages.order_page import OrderPage
 from locators.home_page_locators import HomePageLocators
 from data import Url
 import allure
@@ -16,6 +15,7 @@ class TestHeaderLogo:
         home_page.cross_url(Url.SCOOTER_HOME_PAGE)
         assert driver.current_url == Url.SCOOTER_HOME_PAGE
 
+
     @allure.title('Клик на лого Яндекс в шапке открывает главную страницу Dzen')
     def test_redirect_yandex_logo(self, driver):
         home_page = HomePage(driver)
@@ -24,3 +24,4 @@ class TestHeaderLogo:
         home_page.tab_switch(driver)
         home_page.cross_url(Url.DZEN_HOME_PAGE)
         assert driver.current_url == Url.DZEN_HOME_PAGE
+
