@@ -28,6 +28,4 @@ class HomePageFAQ:
 class Url:
     SCOOTER_HOME_PAGE = 'https://qa-scooter.praktikum-services.ru/'
     DZEN_HOME_PAGE = 'https://dzen.ru/?yredirect=true'
-    ORDER_PAGE = '{SCOOTER_HOME_PAGE}order/'
-    TRACK_PAGE = '{SCOOTER_HOME_PAGE}track/'
 
