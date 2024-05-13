@@ -6,7 +6,7 @@ import allure
 
 
 class TestHeaderLogo:
-    @allure.title('Клик на лого Самоката в шапке открывает главную страницу')
+    @allure.title('Клик на лого Самоката в шапке открывает главную страницу Яндекс Самокат')
     def test_redirect_scooter_logo(self, driver):
         home_page = HomePage(driver)
         home_page.open_page()
