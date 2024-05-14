@@ -1,6 +1,5 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from locators.order_page_locators import OrderPageLocators
 
 
 class BasePage:
@@ -28,18 +27,14 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(expected_conditions.url_to_be(url))
 
 
-    def click_on_yandex_logo(self):
-        self.click_on_element(OrderPageLocators.LOGO_YANDEX)
-
-
-    def click_on_scooter_logo(self):
-        self.click_on_element(OrderPageLocators.LOGO_SCOOTER)
-
-
-    def get_cookie(self, locator):
-        WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(locator)).click()
-
-
     def tab_switch(self, driver):
         driver.switch_to.window(driver.window_handles[1])
+
+
+    def get_current_url(self):
+        return self.driver.current_url
+
+
+    def wait_element(self, locator):
+        WebDriverWait(self.driver, 3).until(expected_conditions.visibility_of_element_located(locator))
 

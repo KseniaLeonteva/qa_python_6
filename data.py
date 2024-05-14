@@ -1,17 +1,19 @@
-class UserHeaderButton:
-    name = 'Иван'
-    last_name = 'Иванов'
-    address = 'улица Ивановская'
-    phone = '+71234567899'
-    comment = 'Не звонить'
+class Users:
+    user_header = {
+    'name': 'Иван',
+    'last_name': 'Иванов',
+    'address': 'улица Ивановская',
+    'phone': '+71234567899',
+    'comment': 'Не звонить'
+    }
 
-
-class UserMainOrderButton:
-    name = 'Петр'
-    last_name = 'Петров'
-    address = 'улица Петровская'
-    phone = '81234567899'
-    comment = ''
+    user_main = {
+    'name': 'Петр',
+    'last_name': 'Петров',
+    'address': 'улица Петровская',
+    'phone': '81234567899',
+    'comment': ''
+    }
 
 
 class HomePageFAQ:
