@@ -8,4 +8,6 @@ class HomePageLocators:
     ANSWER = [By.XPATH, './/div[@id="accordion__panel-{}"]/p'] #ответ
     COOKIE = [By.ID, 'rcc-confirm-button'] #принять куки
     LAST_QUESTION = [By.XPATH, '(.//div[contains(@id,"accordion__heading-")])[last()]'] #последний вопрос в разделе "Вопросы о важном"
+    LOGO_SCOOTER = [By.XPATH, './/a[@href = "/"]'] #лого Самокат
+    LOGO_YANDEX = [By.XPATH, './/a[@href = "//yandex.ru"]'] #лого Яндекс
 

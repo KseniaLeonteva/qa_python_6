@@ -1,18 +1,18 @@
 class Users:
     user_header = {
-    'name': 'Иван',
-    'last_name': 'Иванов',
-    'address': 'улица Ивановская',
-    'phone': '+71234567899',
-    'comment': 'Не звонить'
+        'name': 'Иван',
+        'last_name': 'Иванов',
+        'address': 'улица Ивановская',
+        'phone': '+71234567899',
+        'comment': 'Не звонить'
     }
 
     user_main = {
-    'name': 'Петр',
-    'last_name': 'Петров',
-    'address': 'улица Петровская',
-    'phone': '81234567899',
-    'comment': ''
+        'name': 'Петр',
+        'last_name': 'Петров',
+        'address': 'улица Петровская',
+        'phone': '81234567899',
+        'comment': ''
     }
 
 

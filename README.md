@@ -4,7 +4,7 @@
 * `driver` - настройки webdriver
 
 ## Набор тестовых данных, список URL - ***data.py***
-* `class UserHeaderButton` и `class UserMainOrderButton` - валидные данные пользователя
+* `class Users` - валидные данные пользователя
 * `class Url` - список URL страниц
 * `class HomePageFAQ` - массив ответов на вопросы
 

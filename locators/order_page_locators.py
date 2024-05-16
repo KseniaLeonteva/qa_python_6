@@ -18,6 +18,4 @@ class OrderPageLocators:
     ORDER_BUTTON = [By.XPATH, '//*[contains(@class,"Order_Buttons")]//button[text()="Заказать"]'] #кнопка "Заказать"
     YES_BUTTON = [By.XPATH, './/button[text() = "Да"]'] #кнопка "Да"
     MODAL_SCREEN_SUCCESS = [By.XPATH, './/div[@class = "Order_Modal__YZ-d3"]'] #всплывающее окно Заказ оформлен
-    LOGO_SCOOTER = [By.XPATH, './/a[@href = "/"]'] #лого Самокат
-    LOGO_YANDEX = [By.XPATH, './/a[@href = "//yandex.ru"]'] #лого Яндекс
 

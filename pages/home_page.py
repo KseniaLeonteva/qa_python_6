@@ -1,7 +1,6 @@
 from locators.home_page_locators import HomePageLocators
 from pages.base_page import BasePage
 from data import Url
-from locators.order_page_locators import OrderPageLocators
 import allure
 
 
@@ -31,18 +30,18 @@ class HomePage(BasePage):
 
 
     @allure.step('Открыть главную страницу "Яндекс Самокат"')
-    def open_page(self):
-        self.driver.get(Url.SCOOTER_HOME_PAGE)
+    def open_home_page(self):
+        self.open_page(Url.SCOOTER_HOME_PAGE)
 
 
     @allure.step('Нажать на лого "Яндекс"')
     def click_on_yandex_logo(self):
-        self.click_on_element(OrderPageLocators.LOGO_YANDEX)
+        self.click_on_element(HomePageLocators.LOGO_YANDEX)
 
 
     @allure.step('Нажать на лого "Самокат"')
     def click_on_scooter_logo(self):
-        self.click_on_element(OrderPageLocators.LOGO_SCOOTER)
+        self.click_on_element(HomePageLocators.LOGO_SCOOTER)
 
 
     @allure.step('Проверить URL "Яндекс Самокат"')

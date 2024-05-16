@@ -1,10 +1,9 @@
 from locators.order_page_locators import OrderPageLocators
-from locators.home_page_locators import HomePageLocators
-from pages.home_page import HomePage
+from pages.base_page import BasePage
 import allure
 
 
-class OrderPage(HomePage):
+class OrderPage(BasePage):
     @allure.step('Заполнить поле "Имя"')
     def set_name(self, name):
         self.send_keys(OrderPageLocators.NAME_FIELD, name)

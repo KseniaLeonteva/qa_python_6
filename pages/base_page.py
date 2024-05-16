@@ -28,7 +28,7 @@ class BasePage:
 
 
     def tab_switch(self, driver):
-        driver.switch_to.window(driver.window_handles[1])
+        self.driver.switch_to.window(driver.window_handles[1])
 
 
     def get_current_url(self):
@@ -37,4 +37,8 @@ class BasePage:
 
     def wait_element(self, locator):
         WebDriverWait(self.driver, 3).until(expected_conditions.visibility_of_element_located(locator))
+
+
+    def open_page(self, url):
+        self.driver.get(url)
 
